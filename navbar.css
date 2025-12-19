@@ -1,0 +1,138 @@
+:root {
+  --ea-theme-color: #255af6;
+  --ea-font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ea-font-family);
+}
+/*** INIZIO NAVBAR ***/
+
+.logoContainer {
+  display: flex;
+  padding: 0 32px 0 0;
+  gap: 20px;
+}
+
+.bannerTop {
+  background-color: #161616;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+
+.profileIcon {
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.helpButton {
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.eaIcon {
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.eaIcon:hover {
+  filter: brightness(1.3);
+  cursor: pointer;
+}
+
+.helpButton:hover {
+  filter: brightness(1.3);
+  cursor: pointer;
+}
+
+.profileIcon:hover {
+  filter: brightness(1.3);
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  position: sticky;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  width: 10px;
+  gap: 4px;
+  justify-content: center;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.hamburger {
+  background-color: black;
+  width: 4.5px;
+  border-radius: 120px;
+  height: 4.5px;
+}
+
+.hamburgerMenu:hover .hamburger {
+  background-color: var(--ea-theme-color);
+}
+
+.hamburgerMenu:hover {
+  transform: scale(1.3);
+  transition: transform 0.8;
+  transition: 1 ease;
+  transition-duration: 0.4s;
+  transition-delay: 0.5ms;
+}
+
+.ulContainer {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.navItem {
+  cursor: pointer;
+}
+
+.navItem > a {
+  text-decoration: none;
+  color: #161616;
+  font-weight: 500;
+  margin-right: 0;
+}
+
+.navItem > a:hover {
+  color: var(--ea-theme-color);
+}
+
+.eaLogo {
+  width: 220px;
+  height: 60px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-left: 36px;
+  align-self: center;
+}
+
+.chevronContainer:hover {
+  transition: transform 0.3s;
+  transform: rotate(180deg);
+}
+
+.chevronContainer:hover .chevron {
+  stroke: var(--ea-theme-color);
+}
+
+/*** FINE NAVBAR ***/

@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 10px -2px;
+  box-sizing: border-box;
+  color: #161616;
+  display: flex;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  height: 542px;
+  width: 357px;
+}
+
+.itemsContainer {
+  margin: 18px;
+}
+
+.containerUltimeNovita {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 1105px;
+}
+
+.containerCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 17px;
+  margin-top: 64px;
+}
+
+.titoloUltimeNovita,
+.piuDettagli {
+  align-self: center;
+}
+
+.logoEa {
+  color: #255af6;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.releaseDate {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.titoloUltimeNovita {
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.piuDettagli {
+  margin-top: 60px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 16px;
+  width: 160px;
+  border: solid black 2px;
+  background-color: unset;
+  border-radius: 3px;
+  margin-bottom: 60px;
+  font-size: 17px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 30px;
+  cursor: pointer;
+  transition: 1 ease;
+  transition-duration: 0.6s;
+  transition-delay: 30ms;
+}
+
+.piuDettagli:hover {
+  transform: scale(1.05);
+  transition: 0.3 ease;
+  transition-duration: 0.3s;
+  transition-delay: 10ms;
+  cursor: pointer;
+}
