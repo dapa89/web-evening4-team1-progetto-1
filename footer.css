@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #f3f3f3;
+}
+.main-footer {
+    background-color: #f3f3f3;
+    padding: 40px 10%;
+    color: #161616;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.company-links a {
+    text-decoration: none;
+    color: #161616;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.social-section span {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.social-icons a {
+    color: #161616;
+    margin-left: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0 40px 0;
+}
+
+.footer-bottom {
+    display: grid;
+    grid-template-columns: 80px 1fr 250px;
+    gap: 40px;
+}
+.footer-logo img {
+    width: 60px;
+}
+.main-nav, .legal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: #161616;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 2;
+}
+.legal-nav a {
+    text-decoration: none;
+    color: #161616;
+    margin-right: 20px;
+    font-size: 13px;
+    line-height: 2;
+}
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
+.footer-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dropdown {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+}
+.dropdown label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #666;
+}
+.dropdown select {
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.trustarc img {
+    width: 130px;
+    float: right;
+}
+@media (max-width: 768px) {
+    .footer-bottom {
+        grid-template-columns: 1fr;
+    }
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .social-section {
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+}
