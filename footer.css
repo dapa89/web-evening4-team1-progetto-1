@@ -1,6 +1,6 @@
 :root {
-    --bg-light: #ebebeb;
-    --text-color: #161616;
+    --bg-light: white;
+    --text-color: black;
     --link-hover: #ff4747;
 }
 body {
@@ -8,8 +8,6 @@ body {
     font-family: 'Arial', sans-serif;
 }
 .main-footer {
-    background-color: var(--bg-light);
-    color: var(--text-color);
     padding-bottom: 40px;
 }
 .footer-container {
@@ -21,12 +19,12 @@ body {
     padding: 20px;
 }
 .footer-top {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid whitesmoke;
     padding: 20px 0;
 }
 .footer-links-primary a {
     text-decoration: none;
-    color: var(--text-color);
+    color: black;
     margin-right: 25px;
     font-weight: 500;
     font-size: 14px;
@@ -58,7 +56,7 @@ body {
 }
 .footer-nav-secondary a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var;
     margin-right: 20px;
     font-weight: bold;
     font-size: 15px;
@@ -68,13 +66,13 @@ body {
 }
 .legal-links a {
     text-decoration: none;
-    color: #555;
+    color: grey;
     font-size: 12px;
     margin-right: 15px;
 }
 .copyright {
     font-size: 12px;
-    color: #777;
+    color: grey;
 }
 .footer-selectors {
     display: flex;
@@ -82,7 +80,7 @@ body {
     gap: 10px;
 }
 .selector-box {
-    border: 1px solid #ccc;
+    border: 1px solid whitesmoke;
     padding: 8px 15px;
     background: white;
     font-size: 13px;
