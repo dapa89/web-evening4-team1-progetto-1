@@ -1,112 +1,101 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+:root {
+    --bg-light: #ebebeb;
+    --text-color: #161616;
+    --link-hover: #ff4747;
 }
 body {
-    background-color: #f3f3f3;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 .main-footer {
-    background-color: #f3f3f3;
-    padding: 40px 10%;
-    color: #161616;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    padding-bottom: 40px;
 }
-.footer-top {
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    padding: 20px;
 }
-.company-links a {
+.footer-top {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+.footer-links-primary a {
     text-decoration: none;
-    color: #161616;
+    color: var(--text-color);
     margin-right: 25px;
-    font-size: 14px;
     font-weight: 500;
-}
-.social-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.social-section span {
     font-size: 14px;
+}
+.footer-social span {
+    display: block;
     font-weight: bold;
+    font-size: 13px;
     margin-bottom: 10px;
 }
-.social-icons a {
-    color: #161616;
+.social-icons img {
+    width: 20px;
     margin-left: 15px;
-    font-size: 18px;
-    text-decoration: none;
+    cursor: pointer;
+    filter: grayscale(1);
 }
-.footer-divider {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 20px 0 40px 0;
-}
-
 .footer-bottom {
-    display: grid;
-    grid-template-columns: 80px 1fr 250px;
-    gap: 40px;
+    padding-top: 40px;
 }
-.footer-logo img {
+.footer-logo {
     width: 60px;
+    margin-right: 40px;
 }
-.main-nav, .legal-nav {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
+.footer-content {
+    flex-grow: 1;
 }
-.main-nav a {
+.footer-nav-secondary {
+    margin-bottom: 25px;
+}
+.footer-nav-secondary a {
     text-decoration: none;
-    color: #161616;
+    color: var(--text-color);
     margin-right: 20px;
     font-weight: bold;
     font-size: 15px;
-    line-height: 2;
 }
-.legal-nav a {
+.legal-links {
+    margin-bottom: 15px;
+}
+.legal-links a {
     text-decoration: none;
-    color: #161616;
-    margin-right: 20px;
-    font-size: 13px;
-    line-height: 2;
+    color: #555;
+    font-size: 12px;
+    margin-right: 15px;
 }
 .copyright {
     font-size: 12px;
-    margin-top: 20px;
+    color: #777;
 }
-.footer-settings {
+.footer-selectors {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
-.dropdown {
+.selector-box {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 8px 15px;
     background: white;
-}
-.dropdown label {
-    display: block;
-    font-size: 10px;
-    text-transform: uppercase;
-    color: #666;
-}
-.dropdown select {
-    border: none;
-    width: 100%;
-    font-size: 14px;
-    background: transparent;
+    font-size: 13px;
+    min-width: 180px;
     cursor: pointer;
-    outline: none;
 }
-.trustarc img {
-    width: 130px;
-    float: right;
+.selector-box span {
+    display: block;
+    font-weight: bold;
+}
+.truste-logo {
+    width: 120px;
+    margin-top: 20px;
 }
 @media (max-width: 768px) {
     .footer-bottom {
