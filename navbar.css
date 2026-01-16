@@ -19,6 +19,7 @@ body {
 .bannerTop {
   background-color: #161616;
   width: 100%;
+  min-width: 270px;
   height: 40px;
   display: flex;
   position: relative;
@@ -136,3 +137,25 @@ nav {
 }
 
 /*** FINE NAVBAR ***/
+
+/* RESPONSIVE */
+
+@media (max-width: 1032px) {
+  .navItem {
+    display: none;
+  }
+  .hamburger {
+    width: 20px;
+    height: 1.7px;
+  }
+  .eaLogo {
+    width: 133px;
+    height: 24px;
+  }
+}
+@media (max-width: 1110px) {
+  .ulContainer {
+    gap: 7px;
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containerGiochiEvidenza {
+  /* display: flex;
+  flex-direction: column; */
+  justify-items: center;
+  /* width: 60%; */
+}
+
+.containerCardsGiochi {
+  display: grid;
+  grid-template-columns: repeat(3, 345px);
+  grid-template-rows: repeat(2, 345px);
+  gap: 20px;
+  /* justify-content: center; */
+  margin-top: 20px;
+}
+
+.cardGiochi {
+  width: 345px;
+  height: 345px;
+  overflow: hidden;
+  padding: 14px;
+  position: relative;
+}
+
+.cardGiochi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ultimiGiochi {
+  display: flex;
+  justify-self: center;
+}
+
+.titoloGiochiEvidenza {
+  margin-bottom: 0px;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.ultimiGiochi {
+  margin-top: 60px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 16px;
+  width: 160px;
+  border: solid black 2px;
+  background-color: unset;
+  border-radius: 3px;
+  margin-bottom: 60px;
+  font-size: 17px;
+}
+
+.ultimiGiochi:hover {
+  transform: scale(1.05);
+  transition: 0.3 ease;
+  transition-duration: 0.3s;
+  transition-delay: 10ms;
+  cursor: pointer;
+}
+
+.cardGiochi:hover {
+  cursor: pointer;
+}
+
+.cardGiochi::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to left, #e14f53, #23204c);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transition-delay: 10ms;
+  transition-duration: 0.4s;
+}
+
+.cardGiochi:hover::after {
+  opacity: 0.9;
+  /* transform: translateY(0); */
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .containerCardsGiochi {
+    grid-template-columns: repeat(2, 345px);
+    grid-template-rows: auto;
+  }
+  .titoloGiochiEvidenza {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .containerCardsGiochi {
+    grid-template-columns: 345px;
+  }
+  .titoloGiochiEvidenza {
+    font-size: 29px;
+    text-align: center;
+  }
+  .cardGiochi {
+    width: 575.47px;
+    height: 575.47px;
+    justify-self: center;
+  }
+}
