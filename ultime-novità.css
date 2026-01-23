@@ -1,21 +1,23 @@
-/* @media (max-width: 768px) {
-  img {
-    display: none;
-  }
+.containerUltimeNovita {
+  width: 100%;
+}
+.card {
+  width: 100%;
+  align-self: center;
+}
+.itemsContainer {
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
   .containerCards {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .containerUltimeNovita {
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-self: center;
   }
   .card {
-    width: 100%;
-    align-self: center;
-  }
-  .itemsContainer {
-    margin: 0;
+    width: 357px;
+    height: 542px;
   }
 }
 
@@ -25,33 +27,43 @@
     flex-direction: row;
   }
   .card {
-    width: 40%;
-    align-self: unset;
-    background-color: rebeccapurple;
+    width: 90%;
+    height: 542px;
   }
-} */
-
+}
 @media (max-width: 1024px) {
   .containerCards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto);
+    width: auto;
   }
 }
 
 @media (max-width: 768px) {
   .containerCards {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(auto);
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 0 auto;
+    margin-right: 17px;
   }
-  .card.img {
+  .card img {
     display: none;
   }
   .containerUltimeNovita {
     width: 100%;
   }
   .card {
-    width: 100%;
     align-self: center;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  .itemsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .card p {
+    display: none;
   }
 }
 
@@ -72,8 +84,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   line-height: 26px;
-  height: 542px;
-  width: 357px;
 }
 
 .itemsContainer {
@@ -81,22 +91,16 @@ body {
 }
 
 .containerUltimeNovita {
-  /* display: flex;
-  flex-direction: column; */
   justify-self: center;
-  /* width: auto; */
 }
 
 .containerCards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 17px;
   margin-top: 64px;
-  /* display: flex;
-  flex-wrap: wrap; */
-  width: auto;
+
   margin-left: 17px;
+  justify-items: center;
 }
 
 .logoEa {
@@ -123,7 +127,6 @@ body {
   font-weight: 600;
   font-size: 35px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* justify-self: center; */
 }
 
 .piuDettagli {
@@ -138,7 +141,6 @@ body {
   border-radius: 3px;
   margin-bottom: 60px;
   font-size: 17px;
-  /* margin-left: 43%; */
 }
 
 .card:hover {

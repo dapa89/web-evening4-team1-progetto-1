@@ -14,13 +14,12 @@ body {
   grid-template-columns: repeat(3, 345px);
   grid-template-rows: repeat(2, 345px);
   gap: 20px;
-
   margin-top: 20px;
 }
 
 .cardGiochi {
-  width: 345px;
-  height: 345px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -38,7 +37,7 @@ body {
 }
 
 .titoloGiochiEvidenza {
-  margin-bottom: 0px;
+  margin-bottom: 40px;
   font-weight: 550;
   font-size: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -59,6 +58,14 @@ body {
   font-size: 17px;
 }
 
+.ultimiGiochi:hover {
+  transform: scale(1.05);
+  transition: 0.3 ease;
+  transition-duration: 0.3s;
+  transition-delay: 10ms;
+  cursor: pointer;
+}
+
 .cardGiochi:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -68,18 +75,12 @@ body {
   cursor: pointer;
 }
 
-.cardGiochi::after {
-  position: absolute;
-  inset: 0;
+.cardGiochi:hover {
   background: linear-gradient(to left, #e14f53, #23204c);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  transition-delay: 10ms;
-  transition-duration: 0.4s;
 }
 
-.cardGiochi:hover::after {
-  opacity: 0.9;
+.cardGiochi img {
+  mix-blend-mode: multiply;
 }
 
 /* RESPONSIVE */
@@ -95,17 +96,18 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .containerCardsGiochi {
     grid-template-columns: 345px;
+    gap: 20px;
   }
   .titoloGiochiEvidenza {
     font-size: 29px;
     text-align: center;
   }
   .cardGiochi {
-    width: 575.47px;
-    height: 575.47px;
+    width: 100%;
+    height: 100%;
     justify-self: center;
   }
 }
