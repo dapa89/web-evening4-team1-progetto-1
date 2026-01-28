@@ -16,7 +16,6 @@ body {
   background-position: center right;
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 .ea-play::before {
   content: "";
