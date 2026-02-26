@@ -134,8 +134,12 @@ body {
   transform: rotate(180deg);
 }
 
-.chevronContainer:hover .chevron {
-  stroke: var(--ea-theme-color);
+/* .chevronContainer:hover .chevron {
+  color: var(--ea-theme-color);
+} */
+
+.chevronContainer {
+  margin-top: 8px;
 }
 
 /*** FINE NAVBAR ***/
