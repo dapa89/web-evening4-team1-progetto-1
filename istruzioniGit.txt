@@ -1,0 +1,10 @@
+1: Ogni branch deve essere sempre creato dal branch Pre-main
+2: Prima della pull request mergiare il branch pre-main sul branch della feature in lavorazione. 
+    2A: Spostarsi in locale sul branch pre-main 
+    2B: Aggiornare il branch per-main (premere sulle freccette in basso a sx sul nome del branch)
+    2C: Spostarsi sul branch della lavorazione 
+    2D: Andare nella "Source Control" e cliccare sui 3 puntini accanto a "CHANGES". Selezionare dal menù a tendina "branch" e poi "merge".
+        Dall' elenco dei branch, selezionare il branch da mergiare.
+    2E: Committare e pushare le modifiche che scaturiscono dal merge.
+3: Apri pull request dal git        
+    
