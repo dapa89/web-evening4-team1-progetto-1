@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sideBarContainer {
+  width: 420px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 45px;
+  padding-bottom: 55px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  z-index: 1002;
+  overflow-y: scroll;
+}
+
+.sideBarContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.overlaySidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0.45, 0.25, 0.015, 1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  margin-top: 40px;
+}
+
+.overlaySidebar.active {
+  opacity: 0.7;
+  pointer-events: auto;
+}
+
+.bodyNoScroll {
+  overflow: hidden;
+}
+
+.sideBarContainer.openSidebar {
+  transform: translate(0);
+}
+
+.firstLineItems {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.pSideBar {
+  font-size: 17px;
+  color: #a3a3a3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.pSideBar:hover {
+  cursor: pointer;
+  color: #255af6;
+}
+
+.closeBtn {
+  color: black;
+  border: none;
+  background: none;
+  padding: 0;
+  /* margin-top: 20px; */
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+  path {
+    fill: #255af6;
+  }
+}
+
+.picsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 35px;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.picsContainer img {
+  width: calc(50% - 16px);
+  height: auto;
+}
+
+.eaLogoContainer {
+  /* display: flex;
+  justify-content: center; */
+  background-image: url(../images/HOME\ NAKED.png);
+
+  width: 337px;
+  height: 337px;
+  align-content: center;
+}
+
+.eaLogoContainer img {
+  width: 88px;
+  height: 68px;
+  margin-left: 38%;
+}
+
+.fifaLogoContainer {
+  background-image: url(../images/FIFA\ NAKED.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  width: 152.5px;
+  height: 152.5px;
+}
+
+.fifaLogoContainer img {
+  pointer-events: none;
+  width: 60px;
+  height: 50px;
+  margin-left: 47px;
+}
+
+.f1LogoContainer {
+  background-image: url(../images/F1\ NAKED.png);
+  align-content: center;
+  width: 152.5px;
+  height: 152.5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.f1LogoContainer img {
+  pointer-events: none;
+  width: 73px;
+  height: 32px;
+  margin-left: 40px;
+}
+
+.maddenLogoContainer {
+  background-image: url(../images/MADDEN\ NAKED.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  width: 152.5px;
+  height: 152.5px;
+}
+
+.maddenLogoContainer img {
+  pointer-events: none;
+  width: 65px;
+  height: 57px;
+  margin-left: 44px;
+}
+
+.apexLogoContainer {
+  background-image: url(../images/APEX\ NAKED.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  width: 152.5px;
+  height: 152.5px;
+}
+
+.apexLogoContainer img {
+  pointer-events: none;
+  width: 48px;
+  height: 38px;
+  margin-left: 52px;
+}
+
+.bfLogoContainer {
+  background-image: url(../images/BF\ NAKED.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  width: 152.5px;
+  height: 152.5px;
+}
+
+.bfLogoContainer img {
+  pointer-events: none;
+  width: 78px;
+  height: 68px;
+  margin-left: 38px;
+}
+
+.theSimsLogoContainer {
+  background-image: url(../images/THE\ SIMS\ NAKED.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+  width: 152.5px;
+  height: 152.5px;
+}
+
+.theSimsLogoContainer img {
+  pointer-events: none;
+  width: 79px;
+  height: 31px;
+  margin-left: 38px;
+}
+
+.eaLogoContainer:hover img,
+.picsContainer div:hover img {
+  transform: scale(1.15);
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+.eaLogoContainer:hover,
+.picsContainer div:hover {
+  cursor: pointer;
+}

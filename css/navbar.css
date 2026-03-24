@@ -22,8 +22,13 @@ body {
   min-width: 270px;
   height: 40px;
   display: flex;
-
   justify-content: flex-end;
+  z-index: 3000;
+}
+
+.showBanner {
+  position: sticky;
+  top: 0;
 }
 
 .profileIcon {
@@ -64,6 +69,17 @@ body {
   background-color: #ffffff;
   top: 0;
   z-index: 1000;
+}
+
+.navSidebarOpen {
+  background-color: #ffffff;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  z-index: 1000;
+  margin-top: 40px;
 }
 
 .hamburgerMenu {
@@ -133,10 +149,6 @@ body {
   transition: transform 0.3s;
   transform: rotate(180deg);
 }
-
-/* .chevronContainer:hover .chevron {
-  color: var(--ea-theme-color);
-} */
 
 .chevronContainer {
   margin-top: 8px;
