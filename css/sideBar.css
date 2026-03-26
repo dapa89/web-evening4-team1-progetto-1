@@ -76,7 +76,6 @@ body {
   border: none;
   background: none;
   padding: 0;
-  /* margin-top: 20px; */
 }
 
 .closeBtn:hover {
@@ -102,10 +101,7 @@ body {
 }
 
 .eaLogoContainer {
-  /* display: flex;
-  justify-content: center; */
   background-image: url(../images/HOME\ NAKED.png);
-
   width: 337px;
   height: 337px;
   align-content: center;
@@ -213,7 +209,13 @@ body {
   margin-left: 38px;
 }
 
-.eaLogoContainer:hover img,
+.eaLogoContainer:hover img {
+  transform: translateX(-50%) scale(1.15);
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
 .picsContainer div:hover img {
   transform: scale(1.15);
   transition:
@@ -224,4 +226,87 @@ body {
 .eaLogoContainer:hover,
 .picsContainer div:hover {
   cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1031px) {
+  .sideBarContainer {
+    display: none;
+  }
+
+  .overlaySidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 1032px) {
+  .sideBarContainer {
+    display: flex;
+    width: 360px;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 40px;
+    height: calc(100vh - 40px);
+  }
+
+  .overlaySidebar {
+    margin-top: 40px;
+  }
+
+  .firstLineItems {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .eaLogoContainer {
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .eaLogoContainer img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .picsContainer {
+    gap: 24px;
+  }
+
+  .picsContainer div {
+    width: calc(50% - 12px);
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sideBarContainer {
+    width: 260px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pSideBar {
+    font-size: 15px;
+  }
+
+  .firstLineItems {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .eaLogoContainer {
+    height: 200px;
+  }
+
+  .picsContainer {
+    gap: 15px;
+  }
+
+  .picsContainer div {
+    width: 100%;
+    height: 120px;
+  }
 }
