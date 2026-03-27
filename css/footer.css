@@ -1,0 +1,210 @@
+:root {
+  --bg-light: #ebebeb;
+  --text-color: #161616;
+  --link-hover: #ff4747;
+}
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+.main-footer {
+  background-color: var(--bg-light);
+  color: var(--text-color);
+  padding-bottom: 40px;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  position: relative;
+}
+.footer-list-container {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  background:#ffffff ;
+  border: 1px solid #ddd;
+  padding: 25px;
+  z-index: 999;
+  width: 650px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0, 1);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px 25px;
+}
+.footer-list-container.show {
+  display: grid !important;
+}
+.countries-dropdown {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px 25px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 25px;
+  width: 650px;
+  z-index: 1000;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+.countries-dropdown {
+  display: grid !important;
+  grid-template-columns: repeat(3,1fr);
+}
+.footer-top {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+.footer-links-primary {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #eaeaea;
+}
+.footer-links-primary a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-right: 25px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.footer-social span {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.social-icons img {
+  width: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+.footer-bottom {
+  padding-top: 40px;
+}
+.footer-logo {
+  width: 60px;
+  margin-right: 40px;
+}
+.footer-content {
+  flex-grow: 1;
+}
+.footer-nav-secondary {
+  margin-bottom: 25px;
+}
+.footer-nav-secondary a {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.legal-links {
+  margin-bottom: 15px;
+}
+.legal-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+  margin-right: 15px;
+}
+.copyright {
+  font-size: 12px;
+  color: #777;
+}
+.footer-selectors {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.selector-box {
+  border: 1px solid #ccc;
+  padding: 8px 15px;
+  background: white;
+  font-size: 13px;
+  min-width: 180px;
+  cursor: pointer;
+}
+.selector-box span {
+  display: block;
+  font-weight: bold;
+}
+.truste-logo {
+  width: 120px;
+  margin-top: 20px;
+}
+
+.flag {
+    width: 20px;
+    height: 14px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.flag-united-states { background-image: url("../images/bandiere/stati uniti.png"); }
+.flag-united-kingdom { background-image: url("../images/bandiere/inghilterra.png"); }
+.flag-australia { background-image: url("../images/bandiere/australia.png"); }
+.flag-france { background-image: url("../images/bandiere/francia.png"); }
+.flag-deutschland { background-image: url("../images/bandiere/germania.png"); }
+.flag-italia { background-image: url("../images/bandiere/italia.png"); }
+.flag-japan { background-image: url("../images/bandiere/giappone.png"); }
+.flag-polska { background-image: url("../images/bandiere/polonia.png"); }
+.flag-brasil { background-image: url("../images/bandiere/brasile.jpg"); }
+.flag-russia { background-image: url("../images/bandiere/russia.png"); }
+.flag-espana { background-image: url("../images/bandiere/spagna.png"); }
+.flag-czech-republic { background-image: url("../images/bandiere/republica-cecha.png"); }
+.flag-canada { background-image: url("../images/bandiere/canada.png"); }
+.flag-danmark { background-image: url("../images/bandiere/danimarca.png"); }
+.flag-suomi { background-image: url("../images/bandiere/Finlanda.png"); }
+.flag-mexico { background-image: url("../images/bandiere/messico.png"); }
+.flag-nederland { background-image: url("../images/bandiere/olanda.png"); }
+.flag-norge { background-image: url("../images/bandiere/NORVEGIA.jpg"); }
+.flag-sverige { background-image: url("../images/bandiere/svezia.png"); }
+.flag-south-korea { background-image: url("../images/bandiere/south korea.png"); }
+.flag-turkiye { background-image: url("../images/bandiere/turchia.jpg"); }
+
+.country-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+.country-item :hover {
+  text-decoration: underline;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .footer-container { 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .footer-selectors { 
+        flex-direction: column; 
+        width: 100%; 
+        align-items: center; 
+        margin-top: 20px; 
+    }
+    .countries-dropdown { 
+        width: 90vw; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
