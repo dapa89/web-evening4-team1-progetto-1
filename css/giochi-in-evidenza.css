@@ -17,17 +17,74 @@ body {
   margin-top: 20px;
 }
 
-.cardGiochi {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.bfLogo {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/BF6\ NAKED.jpg);
+  align-content: center;
+  background-size: cover;
 }
 
-.cardGiochi img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.bfLogo img {
+  width: 160px;
+  height: 160px;
+}
+
+.fcLogo {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/FC26\ NAKED.jpg);
+  align-content: center;
+  background-size: cover;
+}
+
+.fcLogo img {
+  width: 160px;
+  height: 40px;
+}
+
+.splitLogo {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/SPLIT\ FICTION\ NAKED.jpg);
+  align-content: center;
+  background-size: cover;
+}
+
+.splitLogo img {
+  width: 95px;
+  height: 65px;
+}
+
+.thesimsLogo {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/THE\ SIMS\ NAKED.jpg);
+  align-content: center;
+  background-size: cover;
+}
+
+.thesimsLogo img {
+  width: 163px;
+  height: 63px;
+}
+
+.apexLogo {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/APEX\ NAKED.jpg);
+  align-content: center;
+  background-size: cover;
+}
+
+.apexLogo img {
+  width: 105px;
+  height: 170px;
+}
+
+.ultimiGiochi {
+  display: flex;
+  justify-self: center;
 }
 
 .titoloGiochiEvidenza {
@@ -64,21 +121,88 @@ body {
   cursor: pointer;
 }
 
-.cardGiochi:hover {
+.containerCardsGiochi > div {
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
-  transform: scale(1.05);
-  transition: 0.3 ease;
-  transition-duration: 0.3s;
-  transition-delay: 10ms;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 345px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.4s ease;
 }
 
-.cardGiochi:hover {
-  background: linear-gradient(to left, #e14f53, #23204c);
+.containerCardsGiochi > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to left,
+    rgba(241, 60, 60, 0.842) 0%,
+    rgba(211, 84, 84, 0.815) 25%,
+    rgba(37, 3, 56, 0.74) 85%
+  );
+
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
 }
 
-.cardGiochi img {
-  mix-blend-mode: multiply;
+.containerCardsGiochi > div:hover::before {
+  opacity: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content img {
+  max-width: 160px;
+  transition: transform 0.4s ease;
+  z-index: 2;
+  margin-bottom: 90px;
+}
+
+.containerCardsGiochi img {
+  max-width: 160px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.4s ease;
+}
+
+.containerCardsGiochi > div:hover img {
+  transform: translateY(-70px);
+}
+
+.cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  z-index: 3;
+}
+
+.containerCardsGiochi > div:hover .cta {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
 }
 
 /* RESPONSIVE */
