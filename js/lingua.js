@@ -1,32 +1,39 @@
 const languagesData = [
-    "united states", 
-    "united kingdom",
-    "australia",
-    "france",
-    "deutschland",
-    "italia",
+    "United States", 
+    "United Kingdom",
+    "Australia",
+    "France",
+    "Deutschland",
+    "Italia",
     "日本",
-    "polska",
-    "brasil",
+    "Polska",
+    "Brasil",
     "Россия",
-    "espana",
+    "Espana",
     "Česká_republika",
     "Canada",
-    "danmark",
-    "suomi",
-    "méxico",
-    "nederland",
-    "norge",
-    "sverige",
+    "Danmark",
+    "Suomi",
+    "México",
+    "Nederland",
+    "Norge",
+    "Sverige",
     "대한민국",
     "Türkiye"
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-    new FooterSelector(
-        languagesData, 
-        'language-selector', 
-        'languages-list',    
-        'current-language'   
-    );
+   
+    const btnLingua = document.getElementById('language-selector'); 
+
+    if (btnLingua) {
+        const language = new FooterSelector(
+            btnLingua,    
+            languagesData,
+            'Lingua'        
+        );
+    } else {
+        console.error("Non ho trovato il pulsante con ID language-selector!");
+    }
 });
+    

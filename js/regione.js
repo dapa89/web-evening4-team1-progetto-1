@@ -9,10 +9,17 @@ const countriesData = [
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-    new FooterSelector(
-        countriesData, 
-        'country-selector', 
-        'countries-list',   
-        'current-country'   
-    );
+   const btnRegione = document.getElementById('country-selector'); 
+
+    if (btnRegione) {
+        const region = new FooterSelector(
+            btnRegione,    
+            countriesData,
+            'Regione'        
+        );
+    } else {
+        console.error("Non ho trovato il pulsante con ID country-selector!");
+    }
 });
+     
+
