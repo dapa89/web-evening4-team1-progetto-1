@@ -11,33 +11,88 @@
     <link rel="stylesheet" href="./css/giochi-in-evidenza.css" />
     <link rel="stylesheet" href="./css/ultime-novità.css" />
     <link rel="stylesheet" href="./css/sideBar.css" />
+    <link rel="stylesheet" href="./css/header.css" />
     <title>EA Sports</title>
   </head>
   <body>
-    <!-- inizio navbar -->
+    <!-- NAVBAR -->
     <div class="bannerTop">
       <div class="logoContainer">
-        <img
-          src="./images/profile_icon.png"
-          alt="Profile button"
-          class="profileIcon"
-        />
-        <img
-          src="./images/questionmark_icon.png"
-          alt="Help button"
-          class="helpButton"
-        />
-        <img src="./images/ea_icon.png" alt="Ea logo" class="eaIcon" />
+        <img src="../images/profile_icon.png" class="profileIcon" />
+        <img src="../images/questionmark_icon.png" class="helpButton" />
+        <img src="../images/ea_icon.png" class="eaIcon" />
       </div>
     </div>
+
+    <!-- PROFILE MENU -->
+    <div class="overlay user-menu-overlay" id="profileMenu">
+      <button class="close-btn" id="closeProfile">&times;</button>
+
+      <div class="user-section">
+        <a href="#" class="user-button">
+          <img src="../images/profilo.jpg" class="user-image" />
+          <span class="user-text">Accedi</span>
+        </a>
+
+        <a href="#" class="user-button">
+          <img
+            src="../images/2eaf2440-dd37-4745-a2fc-1c49b206c13b.jpg"
+            class="user-image"
+          />
+          <span class="user-text">Crea account</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- HELP MENU -->
+    <div class="overlay help-menu-overlay" id="helpMenu">
+      <button class="close-btn" id="closeHelp">&times;</button>
+
+      <div class="support-section">
+        <h2 class="main-title">TI SERVE AIUTO?</h2>
+
+        <div class="grid-container">
+          <div class="card-header">
+            <img
+              src="./images/foto-1.jpg"
+              class="support-img"
+              width="36px"
+              height="36px"
+            />
+            <p>Verificare il mio accesso EA</p>
+          </div>
+
+          <div class="card-header">
+            <img src="./images/foto-2.jpg" class="support-img" />
+            <p>Collegare i tuoi account di una piattaforma al tuo account EA</p>
+          </div>
+
+          <div class="card-header">
+            <img src="./images/foto-1.jpg" class="support-img" />
+            <p>Come posso riscattare un codice?</p>
+          </div>
+
+          <div class="card-header">
+            <img src="./images/foto-3.jpg" class="support-img" />
+            <p>Non riesco a giocare online!</p>
+          </div>
+        </div>
+        <div class="help-footer">
+          Non riesci a trovare quello che cerchi? Vai a
+          <span>EA Help</span> oppure <span>EA Forums</span>.
+        </div>
+      </div>
+    </div>
+
     <nav class="nav">
       <div class="hamburgerMenu">
         <span class="hamburger"></span>
         <span class="hamburger"></span>
         <span class="hamburger"></span>
       </div>
+
       <img
-        src="./images/ea-wordmark-network-nav-coral.svg"
+        src="../images/ea-wordmark-network-nav-coral.svg"
         alt="EA LOGO"
         class="eaLogo"
       />
@@ -46,54 +101,119 @@
           <a href="*">GIOCHI</a>
           <img
             class="chevronContainer"
-            src="./images/down-arrow.png"
+            src="../images/arrow-prova.png"
             alt=""
             width="19px"
-            height="19px"
+            height="10px"
           />
+          <div class="card-column">
+            <div>
+              <h4>ESPLORA I GIOCHI</h4>
+              <ul>
+                <li>Ultimi giochi</li>
+                <li>Prossimamente</li>
+                <li>Giochi gratuiti</li>
+                <li>EA SPORTS</li>
+                <li>EA Originals</li>
+                <li>Libreria dei giochi</li>
+                <li>Offerte EA app</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4>PIATTAFORME</h4>
+              <ul>
+                <li>PC</li>
+                <li>PlayStation</li>
+                <li>Xbox</li>
+                <li>Nintendo Switch™</li>
+                <li>Dispositivi mobili</li>
+                <li>Pogo</li>
+              </ul>
+            </div>
+          </div>
         </li>
         <li class="navItem">
           <a href="*">ESPERIENZE</a>
           <img
             class="chevronContainer"
-            src="./images/down-arrow.png"
+            src="../images/arrow-prova.png"
             alt=""
             width="19px"
-            height="19px"
+            height="10px"
           />
+          <div class="card-navbar">
+            <ul>
+              <li><a href="#">Per EA app</a></li>
+              <li><a href="#">EA Play</a></li>
+              <li><a href="#">Test di gioco</a></li>
+            </ul>
+          </div>
         </li>
         <li class="navItem">
           <a href="*">INFORMAZIONI</a>
           <img
             class="chevronContainer"
-            src="./images/down-arrow.png"
+            src="../images/arrow-prova.png"
             alt=""
             width="19px"
-            height="19px"
+            height="10px"
           />
+          <div class="card-navbar">
+            <ul>
+              <li><a href="#">Società</a></li>
+              <li><a href="#">Lavora con noi</a></li>
+              <li><a href="#">Notizie</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">EA Studios</a></li>
+              <li><a href="#">Partner EA</a></li>
+            </ul>
+          </div>
         </li>
         <li class="navItem">
           <a href="*">IMPEGNI</a>
           <img
             class="chevronContainer"
-            src="./images/down-arrow.png"
+            src="../images/arrow-prova.png"
             alt=""
             width="19px"
-            height="19px"
+            height="10px"
           />
+          <div class="card-navbar">
+            <ul>
+              <li><a href="#">I nostri impegni</a></li>
+              <li><a href="#">Gioco positivo</a></li>
+              <li><a href="#">Test di gioco</a></li>
+              <li><a href="#">Persone e cultura inclusiva</a></li>
+              <li><a href="#">Impatto sociale</a></li>
+              <li><a href="#">Ambiente</a></li>
+            </ul>
+          </div>
         </li>
         <li class="navItem">
           <a href="*">RISORSE</a>
           <img
             class="chevronContainer"
-            src="./images/down-arrow.png"
+            src="../images/arrow-prova.png"
             alt=""
             width="19px"
-            height="19px"
+            height="10px"
           />
+          <div class="card-navbar">
+            <ul>
+              <li><a href="#">Aiuto</a></li>
+              <li><a href="#">Forum della comunità EA</a></li>
+              <li><a href="#">Test di gioco</a></li>
+              <li><a href="#">Filtro famiglia</a></li>
+              <li><a href="#">Accessibilità</a></li>
+              <li><a href="#">Stampa</a></li>
+              <li><a href="#">Investitori</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>
+
     <!-- fine navbar -->
     <!-- INIZIO SIDEBAR -->
     <div class="sideBarContainer">
@@ -437,5 +557,6 @@
       </div>
     </footer>
     <!-- fine footer-->
+    <script src="./js/header.js"></script>
   </body>
 </html>

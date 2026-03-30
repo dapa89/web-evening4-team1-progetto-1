@@ -68,7 +68,7 @@ body {
   height: 60px;
   background-color: #ffffff;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
 }
 
 .navSidebarOpen {
@@ -149,13 +149,13 @@ body {
   transform: rotate(180deg);
 }
 
-.card {
+.card-navbar {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 260px;
+  width: 200px;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 1.2);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 12px;
@@ -163,6 +163,9 @@ body {
   opacity: 0;
   transform: translateY(-10px);
   pointer-events: none;
+  max-height: fit-content;
+  /* margin-top: 30px; */
+  /* z-index: 2000; */
 
   transition: all 0.2s ease;
 }
@@ -171,9 +174,9 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 260px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.5);
+  width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9); /* anche questo sistemato */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 12px;
@@ -181,38 +184,68 @@ body {
   opacity: 0;
   transform: translateY(-10px);
   pointer-events: none;
-
+  max-height: fit-content;
+  /* margin-top: 30px; */
   transition: all 0.2s ease;
+  display: flex;
+  gap: 50px;
+}
+
+.navItem:hover .card-column {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .navItem {
   position: relative;
 }
 
-.navItem:hover .card {
-  opacity: 1;
+.navItem:hover .card-navbar {
+  opacity: 0.9;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-.card ul {
+.card-navbar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.card li {
+.card-navbar li {
   margin: 12px 0;
+  color: black;
 }
 
-.card a {
+.card-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-column h4 {
+  color: black;
+}
+
+.card-column li {
+  margin: 12px 0;
+  color: #444;
+  font-size: 16px;
+}
+
+.card-navbar a {
   text-decoration: none;
   color: #444;
   font-size: 16px;
   transition: color 0.2s ease;
 }
 
-.card a:hover {
+.card-navbar a:hover {
+  color: var(--ea-theme-color);
+}
+
+.card-column li:hover {
   color: var(--ea-theme-color);
 }
 
