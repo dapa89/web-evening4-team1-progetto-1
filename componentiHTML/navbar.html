@@ -3,189 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="../css/sideBar.css" />
-
-    <title>EA Sports</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <title>Navbar Cards</title>
   </head>
   <body>
-    <!-- INIZIO HEADER -->
-    <!-- SIDEBAR NASCOSTA -->
+    <nav class="nav">
+      <div class="hamburgerMenu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
 
-    <header>
-      <div class="bannerTop">
-        <div class="logoContainer">
+      <img
+        src="../images/ea-wordmark-network-nav-coral.svg"
+        alt="EA LOGO"
+        class="eaLogo"
+      />
+      <ul class="ulContainer">
+        <li class="navItem">
+          <a href="*">GIOCHI</a>
           <img
-            src="./images/profile_icon.png"
-            alt="Profile button"
-            class="profileIcon"
+            class="chevronContainer"
+            src="../images/arrow-prova.png"
+            alt=""
+            width="19px"
+            height="10px"
           />
-          <img
-            src="./images/questionmark_icon.png"
-            alt="Help button"
-            class="helpButton"
-          />
-          <img src="./images/ea_icon.png" alt="Ea logo" class="eaIcon" />
-        </div>
-      </div>
-      <nav>
-        <div class="hamburgerMenu">
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-          <span class="hamburger"></span>
-        </div>
+          <div class="card">
+            <div class="column">
+              <h4>ESPLORA I GIOCHI</h4>
+              <ul>
+                <li>Ultimi giochi</li>
+                <li>Prossimamente</li>
+                <li>Giochi gratuiti</li>
+                <li>EA SPORTS</li>
+                <li>EA Originals</li>
+                <li>Libreria dei giochi</li>
+                <li>Offerte EA app</li>
+              </ul>
+            </div>
 
-        <img
-          src="./images/ea-wordmark-network-nav-coral.svg"
-          alt="EA LOGO"
-          class="eaLogo"
-        />
-        <ul class="ulContainer">
-          <li class="navItem">
-            <a href="*">GIOCHI</a
-            ><svg
-              class="chevronContainer"
-              xmlns="web-evening4-team1-progetto-1\images\chevron-bottom-svgrepo-com.svg"
-              width="3em"
-              height="1.5em"
-              viewBox="12 -4 20 20"
-              fill="none"
-            >
-              <rect width="24" height="24" fill="white" />
-              <path
-                class="chevron"
-                d="M17 9.5L12 14.5L7 9.5"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </li>
-          <li class="navItem">
-            <a href="*">ESPERIENZE</a
-            ><svg
-              class="chevronContainer"
-              xmlns="web-evening4-team1-progetto-1\images\chevron-bottom-svgrepo-com.svg"
-              width="3em"
-              height="1.5em"
-              viewBox="12 -4 20 20"
-              fill="none"
-            >
-              <rect width="24" height="24" fill="white" />
-              <path
-                class="chevron"
-                d="M17 9.5L12 14.5L7 9.5"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </li>
-          <li class="navItem">
-            <a href="*">INFORMAZIONI</a
-            ><svg
-              class="chevronContainer"
-              xmlns="web-evening4-team1-progetto-1\images\chevron-bottom-svgrepo-com.svg"
-              width="3em"
-              height="1.5em"
-              viewBox="12 -4 20 20"
-              fill="none"
-            >
-              <rect width="24" height="24" fill="white" />
-              <path
-                class="chevron"
-                d="M17 9.5L12 14.5L7 9.5"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </li>
-          <li class="navItem">
-            <a href="*">IMPEGNI</a
-            ><svg
-              class="chevronContainer"
-              xmlns="web-evening4-team1-progetto-1\images\chevron-bottom-svgrepo-com.svg"
-              width="3em"
-              height="1.5em"
-              viewBox="12 -4 20 20"
-              fill="none"
-            >
-              <rect width="24" height="24" fill="white" />
-              <path
-                class="chevron"
-                d="M17 9.5L12 14.5L7 9.5"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </li>
-          <li class="navItem">
-            <a href="*">RISORSE</a
-            ><svg
-              class="chevronContainer"
-              xmlns="web-evening4-team1-progetto-1\images\chevron-bottom-svgrepo-com.svg"
-              width="3em"
-              height="1.5em"
-              viewBox="12 -4 20 20"
-              fill="none"
-            >
-              <rect width="24" height="24" fill="white" />
-              <path
-                class="chevron"
-                d="M17 9.5L12 14.5L7 9.5"
-                stroke="#000000"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- FINE HEADER -->
-    <!-- SIDEBAR -->
-    <div class="sideBarContainer">
-      <div class="firstLineItems">
-        <p class="pSideBar">Tutti i giochi</p>
-        <button class="closeBtn">
-          <svg
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            width="20px"
-            height="20px"
-          >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g
-              id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></g>
-            <g id="SVGRepo_iconCarrier">
-              <path
-                fill="black"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
-                fill="#0F1729"
-              ></path>
-            </g>
-          </svg>
-        </button>
-      </div>
-      <div class="firstImage">
-        <img src="../images/Screenshot_1SIDEBAR.png" alt="sidebarIcon1" />
-      </div>
-      <div class="picsContainer">
-        <img src="../images/Screenshot_FIFASIDEBAR.png" alt="fifaIcon" />
-        <img src="../images/Screenshot_F1SIDEBAR.png" alt="f1Icon" />
-        <img src="../images/Screenshot_MADDENSIDEBAR.png" alt="maddenIcon" />
-        <img src="../images/Screenshot_APEXSIDEBAR.png" alt="apexIcon" />
-        <img src="../images/Screenshot_BFSIDEBAR.png" alt="bfIcon" />
-        <img src="../images/Screenshot_THESIMSSIDEBAR.png" alt="thesimsIcon" />
-      </div>
-    </div>
-    <script src="../js/sideBar.js"></script>
+            <div class="column">
+              <h4>PIATTAFORME</h4>
+              <ul>
+                <li>PC</li>
+                <li>PlayStation</li>
+                <li>Xbox</li>
+                <li>Nintendo Switch™</li>
+                <li>Dispositivi mobili</li>
+                <li>Pogo</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="navItem">
+          <a href="*">ESPERIENZE</a>
+          <img
+            class="chevronContainer"
+            src="../images/arrow-prova.png"
+            alt=""
+            width="19px"
+            height="10px"
+          />
+          <div class="card">
+            <ul>
+              <li><a href="#">Per EA app</a></li>
+              <li><a href="#">EA Play</a></li>
+              <li><a href="#">Test di gioco</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navItem">
+          <a href="*">INFORMAZIONI</a>
+          <img
+            class="chevronContainer"
+            src="../images/arrow-prova.png"
+            alt=""
+            width="19px"
+            height="10px"
+          />
+          <div class="card">
+            <ul>
+              <li><a href="#">Società</a></li>
+              <li><a href="#">Lavora con noi</a></li>
+              <li><a href="#">Notizie</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">EA Studios</a></li>
+              <li><a href="#">Partner EA</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navItem">
+          <a href="*">IMPEGNI</a>
+          <img
+            class="chevronContainer"
+            src="../images/arrow-prova.png"
+            alt=""
+            width="19px"
+            height="10px"
+          />
+          <div class="card">
+            <ul>
+              <li><a href="#">I nostri impegni</a></li>
+              <li><a href="#">Gioco positivo</a></li>
+              <li><a href="#">Test di gioco</a></li>
+              <li><a href="#">Persone e cultura inclusiva</a></li>
+              <li><a href="#">Impatto sociale</a></li>
+              <li><a href="#">Ambiente</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="navItem">
+          <a href="*">RISORSE</a>
+          <img
+            class="chevronContainer"
+            src="../images/arrow-prova.png"
+            alt=""
+            width="19px"
+            height="10px"
+          />
+          <div class="card">
+            <ul>
+              <li><a href="#">Aiuto</a></li>
+              <li><a href="#">Forum della comunità EA</a></li>
+              <li><a href="#">Test di gioco</a></li>
+              <li><a href="#">Filtro famiglia</a></li>
+              <li><a href="#">Accessibilità</a></li>
+              <li><a href="#">Stampa</a></li>
+              <li><a href="#">Investitori</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <script src="../js/sideBar.js>"></script>
   </body>
 </html>
