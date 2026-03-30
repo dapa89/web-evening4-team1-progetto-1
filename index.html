@@ -498,18 +498,21 @@
           <div class="footer-social">
             <span>Partecipa alla discussione</span>
             <div class="social-icons">
-              <img src="images/facebook-new.jpg" alt="FB" />
-              <img src="images/twitterx.jpg" alt="X" />
-              <img src="images/youtube-6030352_1280.webp" alt="YT" />
+              <img src="../images/facebook-new.jpg" alt="FB" />
+              <img src="../images/twitterx.jpg" alt="X" />
               <img
-                src="images/8385736-instagram-social-media-icona-simbolo-elemento-illustrazione-gratuito-vettoriale.jpg"
+                src="../images/png-clipart-youtube-computer-icons-youtube-angle-rectangle.png"
+                alt="YT"
+              />
+              <img
+                src="../images/8385736-instagram-social-media-icona-simbolo-elemento-illustrazione-gratuito-vettoriale.jpg"
                 alt="IG"
               />
               <img
-                src="images/twitch-logo-icon-social-media-260nw-1211628433.webp"
+                src="../images/twitch-logo-icon-social-media-260nw-1211628433.webp"
                 alt="Twitch"
               />
-              <img src="images/linkedin.jpg" alt="In" />
+              <img src="../images/linkedin.jpg" alt="In" />
             </div>
           </div>
         </div>
@@ -517,7 +520,7 @@
       <div class="footer-bottom">
         <div class="footer-container">
           <div class="footer-branding">
-            <img src="images/unnamed.png" alt="Logo" class="footer-logo" />
+            <img src="../images/unnamed.png" alt="Logo" class="footer-logo" />
           </div>
           <div class="footer-content">
             <div class="footer-nav-secondary">
@@ -543,12 +546,16 @@
             </div>
           </div>
           <div class="footer-selectors">
-            <div class="selector-box">
-              Prezzi per regione <span>Italy</span>
+            <div class="selector-box" id="country-selector">
+              Prezzi per regione <span id="current-country">Italy</span>
+              <div id="countries-list" class="countries-dropdown hidden"></div>
             </div>
-            <div class="selector-box">Lingua <span>Italia</span></div>
+            <div class="selector-box" id="language-selector">
+              Lingua <span id="current-language">Italia</span>
+              <div id="languages-list" class="countries-dropdown hidden"></div>
+            </div>
             <img
-              src="images/truste_logo.jpg"
+              src="../images/truste_logo.jpg"
               alt="TRUSTe"
               class="truste-logo"
             />
@@ -558,5 +565,8 @@
     </footer>
     <!-- fine footer-->
     <script src="./js/header.js"></script>
+    <script src="../js/selector-class.js"></script>
+    <script src="../js/regione.js"></script>
+    <script src="../js/lingua.js"></script>
   </body>
 </html>
