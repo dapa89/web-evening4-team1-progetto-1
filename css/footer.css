@@ -122,6 +122,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  align-items: center;
 }
 .selector-box {
   border: 1px solid #ccc;
@@ -130,6 +131,7 @@ body {
   font-size: 13px;
   min-width: 180px;
   cursor: pointer;
+  height: 80px;
 }
 .selector-box span {
   display: block;
@@ -137,7 +139,7 @@ body {
 }
 .truste-logo {
   width: 120px;
-  margin-top: 20px;
+height: 80px;
 }
 
 .flag {
@@ -147,6 +149,11 @@ body {
   background-position: center;
   border: 1px solid #ddd;
   flex-shrink: 0;
+}
+
+.chevronFooter{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .flag-united-states {
@@ -230,6 +237,8 @@ body {
   visibility: hidden !important;
   opacity: 0 !important;
 }
+
+
 
 @media (max-width: 768px) {
   .footer-container {
